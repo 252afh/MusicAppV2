@@ -6,6 +6,29 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Grid HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920">
+    <Grid HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920" BorderBrush="Black">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" />
+                <GradientStop Color="#FFBB3C3C" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="4*" />
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="40, 0, 0, 0" Grid.RowSpan="1">
+            <Button Content="Local Music" FontFamily="Rockwell Extra Bold" FontWeight="Bold" FontSize="48" Foreground="White">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFFFEC1D" Offset="0" />
+                        <GradientStop Color="#FF7E740E" Offset="0.253" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+        <ListView HorizontalAlignment="Center" Height="750" Margin="0, 200, 0, 0" Grid.RowSpan="2" VerticalAlignment="Center" Width="1800" Background="#FF303030" BorderBrush="#FFBD0404" />
     </Grid>
 </Page>
